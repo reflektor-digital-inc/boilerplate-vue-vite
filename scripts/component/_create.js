@@ -41,13 +41,13 @@ async function createVueComponent(componentName, isPage) {
   const outputDir = isPage
     ? SETTINGS.OUTPUT.PAGES_DIR
     : SETTINGS.OUTPUT.COMPONENTS_DIR;
-  const outputFile = isPage ? 'index.vue' : `${componentName}.vue`;
+  const outputFile = `${componentName}.vue`;
 
   await Promise.all([
     template(
       componentName,
       templateLocation,
-      path.resolve(outputDir, isPage ? componentName : componentName.toLowerCase(), outputFile)
+      path.resolve(outputDir, isPage ? '' : componentName.toLowerCase(), isPage ? outputFile.toLowerCase() : outputFile)
     ),
   ]);
 }
@@ -98,7 +98,7 @@ async function create(promptAnswers) {
 
   if (await checkDirExist(componentOutDir)) return;
 
-  await createDirectory(componentOutDir);
+  !isPage && await createDirectory(componentOutDir);
   await createVueComponent(componentPascal, isPage);
   stories && (await createStories(componentPascal, isPage));
 

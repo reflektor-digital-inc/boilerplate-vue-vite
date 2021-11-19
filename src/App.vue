@@ -1,7 +1,5 @@
 <template>
-  <div>
-    App component
-  </div>
+  <router-view />
 </template>
 
 <script setup>

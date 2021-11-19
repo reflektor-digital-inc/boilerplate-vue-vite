@@ -27,6 +27,9 @@
       { "SwitchCase": 1 }
     ],
     "no-undef": "error",
+    "import/no-unresolved": [2, {
+      "ignore": ["vue-router"]
+    }],
 
     /*
      * SPACING

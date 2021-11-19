@@ -19,7 +19,7 @@
     "snifferjs": "^4.1.0",
     "url-parse": "^1.5.3",
     "vue": "^3.2.16",
-    "vue-router": "^3.5.3"
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
