@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    Home Page
+    Reflektor Digital
   </div>
 </template>
 
@@ -8,5 +8,12 @@
 </script>
 
 <style lang="scss">
-  .Home {}
+  .Home {
+    @include full-size;
+    @include flex-center;
+    background-color: $black;
+    color: $white;
+    font-family: monospace;
+    font-size: 42px;
+  }
 </style>

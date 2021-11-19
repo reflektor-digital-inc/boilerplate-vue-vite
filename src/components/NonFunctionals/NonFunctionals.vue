@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue';
+  import { computed } from 'vue';
   import { storeToRefs } from 'pinia';
 
   import DeviceUnsupported from './DeviceUnsupported/DeviceUnsupported.vue';
@@ -24,7 +24,9 @@
     webglDisabled
   } = storeToRefs(useNonFunctionalStore());
 
-  const deviceUnsupported = ref(!(deviceSupport.browser && deviceSupport.os));
+  const deviceUnsupported = computed(() => {
+    return !(deviceSupport.browser && deviceSupport.os);
+  });
 </script>
 
 <style lang="scss">
