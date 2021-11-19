@@ -1,13 +1,15 @@
 <template>
-  Vue-Vite boilerplate
+  <div>
+    App component
+  </div>
 </template>
 
 <script setup>
-  import { useWindowSizeStore } from '@/store';
+  import { useGsapPlugins, useNonFunctionalCheck, useWindowResizeListener } from '@/composables';
 
-  const { counter } = useWindowSizeStore();
-
-  console.log(counter);
+  useGsapPlugins();
+  useNonFunctionalCheck();
+  useWindowResizeListener();
 </script>
 
 <style lang="scss">

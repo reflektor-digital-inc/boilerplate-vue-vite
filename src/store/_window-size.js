@@ -2,13 +2,17 @@ import { defineStore } from 'pinia';
 
 const useWindowSizeStore = defineStore('windowSize', {
   state : () => ({
-    // example
-    counter : 0
+    windowSize : {
+      width  : 0,
+      height : 0
+    }
   }),
   actions : {
-    // example
-    setCounter(value) {
-      this.counter = value;
+    setWindowSize(size) {
+      this.windowSize = {
+        width  : size.width,
+        height : size.height
+      };
     }
   }
 });

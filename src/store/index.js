@@ -1,3 +1,5 @@
+import useAppStore from './_app';
 import useWindowSizeStore from './_window-size';
+import useNonFunctionalStore from './_non-functional';
 
-export { useWindowSizeStore };
+export { useAppStore, useWindowSizeStore, useNonFunctionalStore };

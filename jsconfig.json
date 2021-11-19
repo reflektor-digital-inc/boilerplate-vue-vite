@@ -9,7 +9,7 @@
       "@/settings/*": ["src/settings/*"],
       "@/utils/*": ["src/utils/*"],
       "@/store/*": ["src/store/*"],
-      "@/hooks/*": ["src/hooks/*"],
+      "@/composables/*": ["src/composables/*"],
       "@/canvas/*": ["src/components/_canvas/*"],
       "@/shaders/*": ["src/shaders/*"],
     }

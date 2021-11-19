@@ -12,8 +12,14 @@
     "store": "node scripts/store/index.js"
   },
   "dependencies": {
+    "device-detector-js": "^3.0.0",
+    "gsap": "file:src/vendor/gsap-club/npm-install-this/gsap-bonus.tgz",
+    "lodash": "^4.17.21",
     "pinia": "^2.0.4",
-    "vue": "^3.2.16"
+    "snifferjs": "^4.1.0",
+    "url-parse": "^1.5.3",
+    "vue": "^3.2.16",
+    "vue-router": "^3.5.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",

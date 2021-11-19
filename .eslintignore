@@ -1,0 +1,8 @@
+node_modules
+.eslintrc
+
+# public
+public
+
+# gsap & vendors
+src/vendor/*
