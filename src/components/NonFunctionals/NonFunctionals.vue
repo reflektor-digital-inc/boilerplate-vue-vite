@@ -3,7 +3,6 @@
     <WindowTooSmall v-if="windowTooSmall" />
     <RotateDevice v-if="rotateDevice" />
     <WebGlDisabled v-if="webglDisabled" />
-    <JavaScriptDisabled />
     <DeviceUnsupported v-if="deviceUnsupported.value" />
   </div>
 </template>
@@ -16,7 +15,6 @@
   import RotateDevice from './RotateDevice/RotateDevice.vue';
   import WebGlDisabled from './WebGlDisabled/WebGlDisabled.vue';
   import WindowTooSmall from './WindowTooSmall/WindowTooSmall.vue';
-  import JavaScriptDisabled from './JavaScriptDisabled/JavaScriptDisabled.vue';
   import { useNonFunctionalStore } from '@/store';
 
   const {
