@@ -1,0 +1,27 @@
+/*
+ * Guide to Storybook in Vue:
+ * https://storybook.js.org/tutorials/intro-to-storybook/vue/en/simple-component/
+ *
+ */
+import {{pascal}} from './{{pascal}}.vue';
+
+const {{pascal}}Stories = {
+  title     : 'components/{{pascal}}',
+  component : {{pascal}}
+};
+
+const Template = (args) => ({
+  components : { {{pascal}} },
+  setup() { return { args }; },
+  template   : '<{{pascal}} v-bind="args" />'
+});
+
+export const Primary = Template.bind({});
+Primary.args = {
+  /*
+   * pass in the component's props here
+   *
+   */
+};
+
+export default {{pascal}}Stories;

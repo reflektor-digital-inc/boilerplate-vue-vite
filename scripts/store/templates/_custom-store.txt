@@ -1,0 +1,16 @@
+import { defineStore } from 'pinia';
+
+const use{{pascal}}Store = defineStore('{{camel}}', {
+  state : () => ({
+    // example
+    counter : 0
+  }),
+  actions : {
+    // example
+    setCounter(value) {
+      this.counter = value;
+    }
+  }
+});
+
+export default use{{pascal}}Store;

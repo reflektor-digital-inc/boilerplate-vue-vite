@@ -7,9 +7,12 @@
     "serve": "vite preview",
     "prepare": "husky install",
     "postinstall": "npm run prepare",
-    "pre-commit": "echo \"Running Husky 🐶\n\" && lint-staged"
+    "pre-commit": "echo \"Running Husky 🐶\n\" && lint-staged",
+    "component": "node scripts/component/index.js",
+    "store": "node scripts/store/index.js"
   },
   "dependencies": {
+    "pinia": "^2.0.4",
     "vue": "^3.2.16"
   },
   "devDependencies": {
@@ -17,12 +20,17 @@
     "@commitlint/config-conventional": "^15.0.0",
     "@vitejs/plugin-vue": "^1.9.3",
     "breakpoint-sass": "^2.7.1",
+    "chalk": "^4.1.2",
+    "change-case": "^4.1.2",
     "eslint": "^8.2.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-vue": "^8.1.1",
     "husky": "^7.0.4",
+    "inquirer": "^8.2.0",
     "lint-staged": "^12.0.3",
+    "maxstache": "^1.0.7",
+    "mkdirp": "^1.0.4",
     "postcss-html": "^1.2.0",
     "sass": "^1.43.4",
     "stylelint": "^14.1.0",
