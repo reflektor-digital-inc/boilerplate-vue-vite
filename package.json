@@ -1,12 +1,30 @@
 {
   "name": "reflektor-boilerplate-vue-vite",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Reflektor Digital Inc.",
+  "contributors": [
+    {
+      "name": "William To",
+      "url": "https://github.com/wlto"
+    }
+  ],
+  "license": "MIT",
+  "repository": "git@github.com:reflektor-digital-inc/reflektor-boilerplate-react-next.git",
+  "bugs": {
+    "url": "https://github.com/reflektor-digital-inc/reflektor-boilerplate-react-next/issues"
+  },
+  "homepage": "https://github.com/reflektor-digital-inc/reflektor-boilerplate-react-next#readme",
+  "engines": {
+    "yarn": ">=1.22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
     "prepare": "husky install",
     "postinstall": "npm run prepare",
+    "preinstall" : "node scripts/preinstall",
     "pre-commit": "echo \"Running Husky 🐶\n\" && lint-staged",
     "component": "node scripts/component/index.js",
     "store": "node scripts/store/index.js",
