@@ -4,7 +4,6 @@ const fs = require('fs');
 const chalk = require('chalk');
 const maxstache = require('maxstache');
 const changeCase = require('change-case');
-
 const SETTINGS = require('./_settings');
 
 function template(componentName, input, output) {
@@ -47,8 +46,8 @@ async function createVueComponent(componentName, isPage) {
     template(
       componentName,
       templateLocation,
-      path.resolve(outputDir, isPage ? '' : componentName.toLowerCase(), isPage ? outputFile.toLowerCase() : outputFile)
-    ),
+      path.resolve(outputDir, isPage ? '' : componentName, isPage ? outputFile.toLowerCase() : outputFile)
+    )
   ]);
 }
 
@@ -68,7 +67,7 @@ async function createStories(componentName, isPage) {
         componentName,
         `${componentName}.stories.js`
       )
-    ),
+    )
   ]);
 }
 
@@ -112,4 +111,4 @@ async function create(promptAnswers) {
   );
 }
 
-module.exports = { create, };
+module.exports = { create };

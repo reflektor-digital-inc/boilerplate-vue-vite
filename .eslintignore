@@ -3,3 +3,7 @@ node_modules
 
 # public
 public
+
+# helper scripts
+helpers/component/**/*.js
+helpers/store/**/*.js
