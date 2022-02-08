@@ -34,3 +34,18 @@
 @function divide($dividend, $divisor) {
   @return math.div($dividend, $divisor);
 }
+
+/**
+* Convert pixel value to rem
+*/
+@function px($px) {
+  @return $px * 0.1rem;
+}
+
+/**
+* Use dynamic vh based on windowHeight.
+* Check @composables/use-window-resize-listener.js for more information.
+*/
+@function vh($val: 0) {
+  @return calc(#{$val} * var(--vh-val));
+}

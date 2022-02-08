@@ -19,7 +19,7 @@ export const BROWSER_MATRIX = {
       firefox : ['>=90', null],
     }
   },
-  iOS : {
+  ios : {
     os       : '>=14',
     browsers : {
       chrome : '>=80',

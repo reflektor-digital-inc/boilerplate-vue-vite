@@ -41,6 +41,7 @@
     "pinia": "^2.0.4",
     "snifferjs": "^4.1.0",
     "url-parse": "^1.5.3",
+    "vite-svg-loader": "^3.1.2",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
   },
@@ -61,6 +62,7 @@
     "chalk": "^4.1.2",
     "change-case": "^4.1.2",
     "css-loader": "^6.5.1",
+    "dotenv": "^16.0.0",
     "eslint": "^8.8.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.25.3",
