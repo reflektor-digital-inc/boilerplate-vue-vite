@@ -1,4 +1,4 @@
-import { SCREEN_SIZE_MATRIX } from '@/settings/settings.support';
+import { SCREEN_SIZE_MATRIX } from '@settings/settings.support';
 
 const checkWindowTooSmall = (windowSize) => {
   let tooSmall = false;

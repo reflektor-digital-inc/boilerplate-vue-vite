@@ -1,7 +1,7 @@
 import _throttle from 'lodash/throttle.js';
 import { onMounted } from 'vue';
 
-import { useWindowSizeStore } from '@/store';
+import { useWindowSizeStore } from '@store';
 
 const useWindowResizeListener = () => {
   const windowSizeStore = useWindowSizeStore();

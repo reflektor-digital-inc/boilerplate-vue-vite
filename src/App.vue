@@ -6,14 +6,13 @@
 </template>
 
 <script setup>
-  import NonFunctionals from './components/NonFunctionals/NonFunctionals.vue';
-  import { useGsapPlugins, useNonFunctionalCheck, useWindowResizeListener } from '@/composables';
+  import NonFunctionals from '@components/NonFunctionals/NonFunctionals.vue';
+  import { useNonFunctionalCheck, useWindowResizeListener } from '@composables';
 
-  useGsapPlugins();
   useNonFunctionalCheck();
   useWindowResizeListener();
 </script>
 
 <style lang="scss">
-  @import '@/styles/index';
+  @import '@styles/index';
 </style>

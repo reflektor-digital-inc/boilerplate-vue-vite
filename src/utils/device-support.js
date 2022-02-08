@@ -1,5 +1,5 @@
 import { info } from './device';
-import { BROWSER_MATRIX } from '@/settings/settings.support';
+import { BROWSER_MATRIX } from '@settings/settings.support';
 
 const ALLOWED_COMPARISONS = ['>=', '<=', '>', '<'];
 

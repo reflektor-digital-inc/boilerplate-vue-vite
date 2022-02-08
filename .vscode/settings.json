@@ -12,5 +12,6 @@
   },
   "css.validate": false,
   "scss.validate": false,
-  "stylelint.autoFixOnSave": true
+  "stylelint.autoFixOnSave": true,
+  "typescript.validate.enable": false
 }

@@ -1,5 +1,5 @@
 {
-  "name": "reflektor-boilerplate-vue-vite",
+  "name": "boilerplate-vue-vite",
   "version": "1.0.0",
   "private": true,
   "author": "Reflektor Digital Inc.",
@@ -7,15 +7,20 @@
     {
       "name": "William To",
       "url": "https://github.com/wlto"
+    },
+    {
+      "name": "Luc Palombo",
+      "url": "https://github.com/lpalombo"
     }
   ],
   "license": "MIT",
-  "repository": "git@github.com:reflektor-digital-inc/reflektor-boilerplate-react-next.git",
+  "repository": "git@github.com:reflektor-digital-inc/boilerplate-vue-vite.git",
   "bugs": {
-    "url": "https://github.com/reflektor-digital-inc/reflektor-boilerplate-react-next/issues"
+    "url": "https://github.com/reflektor-digital-inc/boilerplate-vue-vite/issues"
   },
-  "homepage": "https://github.com/reflektor-digital-inc/reflektor-boilerplate-react-next#readme",
+  "homepage": "https://github.com/reflektor-digital-inc/boilerplate-vue-vite#readme",
   "engines": {
+    "node" : ">=16.13.2",
     "yarn": ">=1.22"
   },
   "scripts": {
@@ -24,10 +29,9 @@
     "serve": "vite preview",
     "prepare": "husky install",
     "postinstall": "npm run prepare",
-    "preinstall" : "node scripts/preinstall",
     "pre-commit": "echo \"Running Husky 🐶\n\" && lint-staged",
-    "component": "node scripts/component/index.js",
-    "store": "node scripts/store/index.js",
+    "component": "node helpers/component/index.js",
+    "store": "node helpers/store/index.js",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook"
   },

@@ -35,12 +35,12 @@
      * SPACING
      */
     "object-curly-spacing": ["error", "always"],
-    "object-curly-newline": ["error", {
-      "ObjectExpression": { "multiline": true, "minProperties": 5 },
-      "ObjectPattern": { "multiline": true, "minProperties": 5 },
-      "ImportDeclaration": "never",
-      "ExportDeclaration": "never"
-    }],
+    // "object-curly-newline": ["error", {
+    //   "ObjectExpression": { "multiline": true, "minProperties": 5 },
+    //   "ObjectPattern": { "multiline": true, "minProperties": 5 },
+    //   "ImportDeclaration": "never",
+    //   "ExportDeclaration": "never"
+    // }],
     "object-property-newline": ["error", {
       "allowAllPropertiesOnSameLine": true
     }],
@@ -88,7 +88,14 @@
       "alias": {
         "map": [
           ["@", "./src"],
-          ["@/*", "./src/*"]
+          ["@components", "./src/components"],
+          ["@pages", "./src/pages"],
+          ["@assets", "./src/assets"],
+          ["@styles", "./src/styles"],
+          ["@settings", "./src/settings"],
+          ["@utils", "./src/utils"],
+          ["@store", "./src/store"],
+          ["@composables", "./src/composables"]
         ]
       }
     }

@@ -15,7 +15,7 @@
   import RotateDevice from './RotateDevice/RotateDevice.vue';
   import WebGlDisabled from './WebGlDisabled/WebGlDisabled.vue';
   import WindowTooSmall from './WindowTooSmall/WindowTooSmall.vue';
-  import { useNonFunctionalStore } from '@/store';
+  import { useNonFunctionalStore } from '@store';
 
   const {
     deviceSupport,

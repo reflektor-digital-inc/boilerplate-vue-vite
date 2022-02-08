@@ -16,7 +16,6 @@
 
 <script setup>
   import { ref, computed, onMounted, watch } from 'vue';
-  import gsap from 'gsap';
 
   import useImagePreloaderWorker from './ImagePreloader.worker';
 
@@ -77,10 +76,10 @@
   // watchers
   watch(loaded, () => {
     if (loaded.value) {
-      gsap.to(
-        wrapperRef.value,
-        { opacity : 1, duration : props.noFade ? 0 : 0.5 }
-      );
+      // gsap.to(
+      //   wrapperRef.value,
+      //   { opacity : 1, duration : props.noFade ? 0 : 0.5 }
+      // );
     }
   });
 

@@ -14,13 +14,13 @@ module.exports = {
   },
   webpackFinal: async (config, { configType }) => {
     config.resolve.alias = {
-      '@/components': path.resolve(__dirname, '../src/components'),
-      '@/pages': path.resolve(__dirname, '../src/pages'),
-      '@/assets': path.resolve(__dirname, '../src/assets'),
-      '@/styles': path.resolve(__dirname, '../src/styles'),
-      '@/settings': path.resolve(__dirname, '../src/settings'),
-      '@/utils': path.resolve(__dirname, '../src/utils'),
-      '@/store': path.resolve(__dirname, '../src/utils'),
+      '@components': path.resolve(__dirname, '../src/components'),
+      '@pages': path.resolve(__dirname, '../src/pages'),
+      '@assets': path.resolve(__dirname, '../src/assets'),
+      '@styles': path.resolve(__dirname, '../src/styles'),
+      '@settings': path.resolve(__dirname, '../src/settings'),
+      '@utils': path.resolve(__dirname, '../src/utils'),
+      '@store': path.resolve(__dirname, '../src/utils'),
       'vue': 'vue/dist/vue.esm-bundler.js'
     };
 
