@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    Reflektor Digital
+    This is a website
   </div>
 </template>
 
@@ -14,6 +14,6 @@
     background-color: $black;
     color: $white;
     font-family: monospace;
-    font-size: 42px;
+    font-size: px(42);
   }
 </style>
