@@ -1,4 +1,4 @@
-import { onMounted, watch } from 'vue';
+import { onMounted } from 'vue';
 import { useNonFunctionalStore, useWindowSizeStore } from '@store';
 import device from '@utils/device';
 import { checkDeviceSupport } from '@utils/device-support';

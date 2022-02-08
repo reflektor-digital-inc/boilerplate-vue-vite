@@ -18,6 +18,7 @@ const useImagePreloaderWorker = (src) => {
         preloadedImage.value = objectURL;
       }
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('handleWorkerMessage error:', error.message);
       workerImagePreloadError.value = true;
     }

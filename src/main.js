@@ -1,7 +1,6 @@
 import { createApp } from 'vue';
 import { createWebHistory, createRouter } from 'vue-router';
 import { createPinia } from 'pinia';
-
 import Home from '@pages/home.vue';
 import App from './App.vue';
 

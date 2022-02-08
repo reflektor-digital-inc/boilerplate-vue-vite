@@ -16,7 +16,6 @@
 
 <script setup>
   import { ref, computed, onMounted, watch } from 'vue';
-
   import useImagePreloaderWorker from './ImagePreloader.worker';
 
   const props = defineProps({
@@ -58,13 +57,15 @@
     };
   });
   const imageStyles = computed(() => {
-    return props.imageSameSize ? {
-      width  : props.width,
-      height : props.height,
-    } : {
-      width  : '100%',
-      height : '100%',
-    };
+    return props.imageSameSize
+      ? {
+        width  : props.width,
+        height : props.height,
+      }
+      : {
+        width  : '100%',
+        height : '100%',
+      };
   });
   const imageClasses = computed(() => {
     return [

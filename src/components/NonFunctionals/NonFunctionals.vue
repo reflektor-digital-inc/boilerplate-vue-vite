@@ -10,12 +10,11 @@
 <script setup>
   import { computed } from 'vue';
   import { storeToRefs } from 'pinia';
-
+  import { useNonFunctionalStore } from '@store';
   import DeviceUnsupported from './DeviceUnsupported/DeviceUnsupported.vue';
   import RotateDevice from './RotateDevice/RotateDevice.vue';
   import WebGlDisabled from './WebGlDisabled/WebGlDisabled.vue';
   import WindowTooSmall from './WindowTooSmall/WindowTooSmall.vue';
-  import { useNonFunctionalStore } from '@store';
 
   const {
     deviceSupport,

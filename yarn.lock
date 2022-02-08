@@ -1566,6 +1566,22 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
   integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
 
+"@reflektor/eslint-config-vue@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@reflektor/eslint-config-vue/-/eslint-config-vue-1.0.0.tgz#d43418c2d1e9673c19dfd9661120d6c898d5e44b"
+  integrity sha512-UnIM9xagLymao51q3BYjt9lWhWFtGd7o0zt0UsRI8nIaLAS/k8vMFmmXmEgzPCdT+7wU0U0bD54VrxeFOF0B2g==
+
+"@reflektor/eslint-plugin-vue@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@reflektor/eslint-plugin-vue/-/eslint-plugin-vue-1.0.0.tgz#16a31e91dd19634650c4a9010e4871db117c1df2"
+  integrity sha512-Ar6FwUJTXdcX9WMhdIi4pnd2i6B4yp49o/l1hkVqXHi3S3pa4XiZxJqxpwjVtxy53Ml80B4v5CNjxkw+xL/9GQ==
+  dependencies:
+    "@reflektor/eslint-config-vue" "^1.0.0"
+    eslint-import-resolver-alias "^1.1.2"
+    eslint-plugin-import "^2.25.3"
+    eslint-plugin-nuxt "^3.1.0"
+    eslint-plugin-vue "^8.1.1"
+
 "@storybook/addon-actions@6.4.18", "@storybook/addon-actions@^6.3.12":
   version "6.4.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.4.18.tgz#e997060e1b0af62f9f831301a56a3addfc1f1365"
@@ -5552,6 +5568,15 @@ eslint-plugin-import@^2.25.3:
     resolve "^1.20.0"
     tsconfig-paths "^3.12.0"
 
+eslint-plugin-nuxt@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-nuxt/-/eslint-plugin-nuxt-3.1.0.tgz#b8d70dc321e2f2f345039980eb28a2f52b3dc492"
+  integrity sha512-vW+XbbMhncihLs+GYP+f6rqyBq33O3dNUqoFckbLGlWUsAyTzTp/2KYQC7MGpRg8Rq8JPj5Or2ypuSn7gOveHw==
+  dependencies:
+    eslint-plugin-vue "^8.1.1"
+    semver "^7.3.5"
+    vue-eslint-parser "^8.0.1"
+
 eslint-plugin-vue@^8.1.1:
   version "8.4.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-8.4.1.tgz#0a25493bbfee6baa21614e637e3fd390617c0bb4"
@@ -5603,7 +5628,7 @@ eslint-visitor-keys@^3.1.0, eslint-visitor-keys@^3.2.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.2.0.tgz#6fbb166a6798ee5991358bc2daa1ba76cc1254a1"
   integrity sha512-IOzT0X126zn7ALX0dwFiUQEdsfzrm4+ISsQS8nukaJXwEyYKRSnEIIDULYg1mCtGp7UUXgfGl7BIolXREQK+XQ==
 
-eslint@^8.2.0:
+eslint@^8.8.0:
   version "8.8.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.8.0.tgz#9762b49abad0cb4952539ffdb0a046392e571a2d"
   integrity sha512-H3KXAzQGBH1plhYS3okDix2ZthuYJlQQEGE5k0IKuEqUSiyu4AmxxlJ2MtTYeJ3xB4jDhcYCwGOg2TXYdnDXlQ==
