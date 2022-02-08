@@ -33,7 +33,6 @@
   },
   "dependencies": {
     "device-detector-js": "^3.0.0",
-    "gsap": "file:src/vendor/gsap-club/npm-install-this/gsap-bonus.tgz",
     "lodash": "^4.17.21",
     "pinia": "^2.0.4",
     "snifferjs": "^4.1.0",
