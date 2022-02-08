@@ -1,4 +1,4 @@
-import { ref, watchEffect, onUnmounted } from 'vue';
+import { ref, onUnmounted } from 'vue';
 
 const useImagePreloaderWorker = (src) => {
   const worker = ref(null);

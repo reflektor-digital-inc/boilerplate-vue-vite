@@ -1,6 +1,6 @@
 import { onMounted } from 'vue';
 import { useNonFunctionalStore, useWindowSizeStore } from '@store';
-import device from '@utils/device';
+import { detection } from '@utils/device';
 import { checkDeviceSupport } from '@utils/device-support';
 import { checkWindowTooSmall, checkWindowTooLarge } from '@utils/device-screen-size';
 import { isWebGLAvailable, isWebGL2Available } from '@utils/webgl-support';
@@ -25,7 +25,7 @@ const useNonFunctionalCheck = () => {
 
   // check window size
   windowSizeStore.$subscribe((mutation, state) => {
-    if (device.detection.isDesktop) {
+    if (detection.isDesktop) {
       setWindowTooSmall(checkWindowTooSmall(state.windowSize));
       setWindowTooLarge(checkWindowTooLarge(state.windowSize));
     }
