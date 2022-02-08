@@ -3,15 +3,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@assets/*": ["src/assets/*"],
-      "@styles/*": ["src/styles/*"],
-      "@settings/*": ["src/settings/*"],
-      "@utils/*": ["src/utils/*"],
-      "@store/*": ["src/store/*"],
-      "@composables/*": ["src/composables/*"]
+      "@": ["src"],
+      "@components": ["src/components"],
+      "@pages": ["src/pages"],
+      "@assets": ["src/assets"],
+      "@styles": ["src/styles"],
+      "@settings": ["src/settings"],
+      "@utils": ["src/utils"],
+      "@store": ["src/store"],
+      "@composables": ["src/composables"]
     }
   }
 }
