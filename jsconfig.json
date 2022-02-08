@@ -3,6 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      // For shorten index file access
+      // Example: import ... from '@store'
       "@": ["src"],
       "@components": ["src/components"],
       "@pages": ["src/pages"],
@@ -11,7 +13,19 @@
       "@settings": ["src/settings"],
       "@utils": ["src/utils"],
       "@store": ["src/store"],
-      "@composables": ["src/composables"]
+      "@composables": ["src/composables"],
+
+      // For explicit file access
+      // Example: import ... from '@store/_window-size'
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@styles/*": ["src/styles/*"],
+      "@settings/*": ["src/settings/*"],
+      "@utils/*": ["src/utils/*"],
+      "@store/*": ["src/store/*"],
+      "@composables/*": ["src/composables/*"]
     }
   }
 }
