@@ -16,6 +16,8 @@
   import WebGlDisabled from './WebGlDisabled/WebGlDisabled.vue';
   import WindowTooSmall from './WindowTooSmall/WindowTooSmall.vue';
 
+  //
+
   const {
     deviceSupport,
     windowTooSmall,
